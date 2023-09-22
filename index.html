@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator App</title>
+	<link rel="stylesheet" href="style.css">
+	<script defer src="script.js"></script>
+</head>
+<body>
+	<div class="interactive">
+		<div>Interactive Calculator</div>
+		<input type="text" disabled class="display" id="display" />
+		<div class="buttons">
+			<div class="btn btn-yellow" onclick="clearDisplay()">AC</div>
+			<div class="btn btn-yellow" onclick="addValue('(')">&#40;</div>
+			<div class="btn btn-yellow" onclick="addValue(')')">&#41;</div>
+			<div class="btn btn-orange" onclick="addValue('+')">&plus;</div>
+
+			<div class="btn btn-gray" onclick="addValue('7')">7</div>
+			<div class="btn btn-gray" onclick="addValue('8')">8</div>
+			<div class="btn btn-gray" onclick="addValue('9')">9</div>
+			<div class="btn btn-orange" onclick="addValue('*')">&times;</div>
+
+			<div class="btn btn-gray" onclick="addValue('4')">4</div>
+			<div class="btn btn-gray" onclick="addValue('5')">5</div>
+			<div class="btn btn-gray" onclick="addValue('6')">6</div>
+			<div class="btn btn-orange" onclick="addValue('-')">&minus;</div>
+
+			<div class="btn btn-gray" onclick="addValue('3')">3</div>
+			<div class="btn btn-gray" onclick="addValue('2')">2</div>
+			<div class="btn btn-gray" onclick="addValue('1')">1</div>
+			<div class="btn btn-orange" onclick="addValue('/')">&div;</div>
+
+			<div class="btn btn-gray" onclick="addValue('0')">0</div>
+			<div class="btn btn-gray" onclick="addValue('.')">.</div>
+			<div class="btn btn-orange btn-extend" onclick="calculate()">&equals;</div>
+		</div>
+	</div>
+</body>
+</html>
