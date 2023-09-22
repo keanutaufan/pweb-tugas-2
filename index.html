@@ -37,5 +37,32 @@
 			<div class="btn btn-orange btn-extend" onclick="calculate()">&equals;</div>
 		</div>
 	</div>
+
+	<div class="simple">
+		<div style="text-align: center;">Simple Calculator</div>
+
+		<div class="input-form">
+			<div class="input-group">
+				<label for="num1">Number 1:</label>
+				<input type="number" id="num1" class="input-field">
+			</div>
+			<div class="input-group">
+				<label for="num2">Number 2:</label>
+				<input type="number" id="num2" class="input-field">
+			</div>
+		</div>
+
+		<div class="button-group">
+			<div class="btn btn-orange" onclick="calcTwo('add')">&plus;</div>
+			<div class="btn btn-orange" onclick="calcTwo('sub')">&minus;</div>
+			<div class="btn btn-orange" onclick="calcTwo('mul')">&times;</div>
+			<div class="btn btn-orange" onclick="calcTwo('div')">&div;</div>
+		</div>
+
+		<br>
+		<div>Result:</div>
+		<div class="result" id="result"></div>
+
+	</div>
 </body>
 </html>
